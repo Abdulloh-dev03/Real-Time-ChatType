@@ -46,7 +46,9 @@
     "socket.io": "^4.8.1",
     "ts-node": "^10.9.2",
     "tsx": "^4.21.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "winston": "^3.19.0",
+    "zod": "^4.3.5"
   },
   "devDependencies": {
     "@types/cookie": "^0.6.0",
@@ -59,6 +61,7 @@
     "@types/node": "^24.2.0",
     "@types/nodemailer": "^6.4.21",
     "@types/passport": "^1.0.17",
-    "@types/passport-google-oauth20": "^2.0.16"
+    "@types/passport-google-oauth20": "^2.0.16",
+    "@types/winston": "^2.4.4"
   }
 }
