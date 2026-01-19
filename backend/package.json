@@ -2,7 +2,7 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
   "imports": {
     "#config/*": "./src/config/*",
     "#controllers/*": "./src/controllers/*",
