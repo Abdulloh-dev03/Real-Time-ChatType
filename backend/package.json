@@ -2,24 +2,57 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/src/index.js",
+  "main": "dist/index.js",
   "imports": {
-    "#config/*": "./src/config/*",
-    "#controllers/*": "./src/controllers/*",
-    "#models/*": "./src/models/*",
-    "#routes/*": "./src/routes/*",
-    "#services/*": "./src/services/*",
-    "#utils/*": "./src/utils/*",
-    "#validations/*": "./src/validations/*",
-    "#middlewares/*": "./src/middlewares/*",
-    "#types/*": "./src/types/*",
-    "#lib/*": "./src/lib/*",
-    "#socket/*": "./src/socket.io/*"
+    "#config/*.js": {
+      "development": "./src/config/*.ts",
+      "default": "./dist/config/*.js"
+    },
+    "#controllers/*.js": {
+      "development": "./src/controllers/*.ts",
+      "default": "./dist/controllers/*.js"
+    },
+    "#models/*.js": {
+      "development": "./src/models/*.ts",
+      "default": "./dist/models/*.js"
+    },
+    "#routes/*.js": {
+      "development": "./src/routes/*.ts",
+      "default": "./dist/routes/*.js"
+    },
+    "#services/*.js": {
+      "development": "./src/services/*.ts",
+      "default": "./dist/services/*.js"
+    },
+    "#utils/*.js": {
+      "development": "./src/utils/*.ts",
+      "default": "./dist/utils/*.js"
+    },
+    "#validations/*.js": {
+      "development": "./src/validations/*.ts",
+      "default": "./dist/validations/*.js"
+    },
+    "#middlewares/*.js": {
+      "development": "./src/middlewares/*.ts",
+      "default": "./dist/middlewares/*.js"
+    },
+    "#types/*.js": {
+      "development": "./src/types/*.ts",
+      "default": "./dist/types/*.js"
+    },
+    "#lib/*.js": {
+      "development": "./src/lib/*.ts",
+      "default": "./dist/lib/*.js"
+    },
+    "#socket/*.js": {
+      "development": "./src/socket.io/*.ts",
+      "default": "./dist/socket.io/*.js"
+    }
   },
   "scripts": {
     "dev": "tsx watch src/index.ts",
     "build": "tsc",
-    "start": "node dist/src/index.js"
+    "start": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
@@ -39,14 +72,10 @@
     "mongoose": "^8.16.4",
     "multer": "^2.0.2",
     "nodemailer": "^7.0.12",
-    "nodemon": "^3.1.10",
     "passport": "^0.7.0",
     "passport-google-oauth20": "^2.0.0",
     "resend": "^6.7.0",
     "socket.io": "^4.8.1",
-    "ts-node": "^10.9.2",
-    "tsx": "^4.21.0",
-    "typescript": "^5.8.3",
     "winston": "^3.19.0",
     "zod": "^4.3.5"
   },
@@ -62,6 +91,10 @@
     "@types/nodemailer": "^6.4.21",
     "@types/passport": "^1.0.17",
     "@types/passport-google-oauth20": "^2.0.16",
-    "@types/winston": "^2.4.4"
+    "@types/winston": "^2.4.4",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.21.0",
+    "typescript": "^5.8.3"
   }
 }

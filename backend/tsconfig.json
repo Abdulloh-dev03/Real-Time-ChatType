@@ -2,10 +2,10 @@
   "compilerOptions": {
     /* Projects and Modules */
     "target": "ESNext",
-    "module": "NodeNext",                  // Required for "type": "module" in package.json
+    "module": "NodeNext",
     "moduleResolution": "NodeNext",
-    "rootDir": "./",                    // Where your source code lives
-    "outDir": "./dist",                    // Where the compiled JS will go
+    "rootDir": "src",
+    "outDir": "dist",
     
     /* Strictness */
     "strict": true,
@@ -22,5 +22,7 @@
     "sourceMap": true,
     "declaration": true,
     "verbatimModuleSyntax": true
-  }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }
