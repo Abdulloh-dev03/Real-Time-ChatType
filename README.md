@@ -1,6 +1,7 @@
 # ChatType
 
-![ChatType Banner]
+<img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/3d9a9d6d-fadd-46fd-95a0-11f6fa91c808" />
+
 Deployed Link:https://chattype.netlify.app/
 
 **ChatType** is a modern, full-stack real-time chat application built to demonstrate scalable architecture, seamless user experience, and robust performance. It leverages a powerful stack comprising **React 19**, **Node.js**, **Socket.io**, and **MongoDB**, wrapped in a type-safe **TypeScript** environment.
